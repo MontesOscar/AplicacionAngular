@@ -1,0 +1,66 @@
+/* Fondo del body */
+html {
+  font-family: 'Roboto', sans-serif; /* Fuente moderna y limpia */
+  background-image: url('./fondo.jpg'); /* Color de fondo suave y agradable */
+  color: #333; /* Color de texto oscuro */
+}
+
+ h2{
+  text-align: center;
+  font-size:  4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+/* Estilo general de las tarjetas */
+/* Estilo general de las tarjetas */
+.card {
+  border-radius: 12px; /* Bordes redondeados más suaves */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil en las tarjetas */
+  transition: all 0.3s ease; /* Transición suave al hacer hover */
+  background-color: #F1F0E8; /* Fondo blanco para un estilo limpio */
+  transform: scale(1); /* Escala inicial */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de zoom */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sombra más intensa */
+}
+
+
+/* Estilo del encabezado de la tarjeta */
+.card-header {
+  border-radius: 12px 12px 0 0; /* Bordes redondeados en la parte superior */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color:#89A8B2  ; /* Fondo gris claro */
+  color: rgb(255, 255, 255); /* Letra blanca */
+  font-size: 1.2rem; /* Tamaño de fuente mayor */
+  font-weight: 600; /* Peso de fuente más fuerte */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Estilos para los botones */
+.btn, .btn2 {
+  border-radius: 20px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilo de los botones */
+.btn {
+  background-color: #A59D84; /* Fondo de botones en azul */
+  color: #fff; /* Texto blanco en botones */
+}
+
+.btn:hover {
+  background-color: #b30000; /* Botón más oscuro al hacer hover */
+  transform: scale(1.5); /* Efecto de aumento al hacer hover */
+}
+
+.btn2 {
+  background-color: #A59D84; /* Fondo de botones en azul */
+  color: #fff; /* Texto blanco en botones */
+}
+
+.btn2:hover {
+  background-color: #b7e000; /* Botón más oscuro al hacer hover */
+  transform: scale(1.5); /* Efecto de aumento al hacer hover */
+}

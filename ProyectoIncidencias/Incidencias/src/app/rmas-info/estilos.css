@@ -1,0 +1,76 @@
+/* Estilo para el fondo del body */
+html {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('./imagenes/fondo.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  color: #333;
+}
+
+body {
+  background-color: rgba(244, 244, 249, 0.8); /* Fondo con opacidad para la tabla */
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Estilo para la tabla */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+  width: 80%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reporte-table {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Estilo para las filas de la tabla */
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Estilo para los botones */
+.btn-card {
+  background-color: #364cc7;
+  border-color: #00aaff;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-card:hover {
+  background-color: #be0707d0;
+  border-color: #000000;
+}
+
+/* Estilo para los bordes de las celdas de la tabla */
+.table th, .table td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}

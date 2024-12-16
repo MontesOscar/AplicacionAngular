@@ -1,0 +1,81 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Administrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="usuario.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Usuario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" (click)="navegar('/administrador')">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="navegar('/misreportes')">Mis reportes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-4">
+        <h1 class="mb-4">Bienvenido al Panel de Usuario</h1>
+        <p class="lead">Administra fácilmente reportes.</p>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card reporte-card">
+                    <img src="https://i.pinimg.com/236x/38/f4/bc/38f4bccefd9154e9d78197a21610479f.jpg" class="card-img-top" alt="Icono 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Reportes</h5>
+                        <p class="card-text">Gestiona y visualiza los reportes generados por ti.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card reporte-card">
+                    <img src="https://i.pinimg.com/236x/03/7c/83/037c83265cd2a8008490b35a03e9991a.jpg" class="card-img-top" alt="Icono 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tú</h5>
+                        <p class="card-text">Ten tu informacion a la mano.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card reporte-card">
+                    <img src="https://i.pinimg.com/236x/27/a4/4a/27a44afab7ed4ba4ca8496ac888b9dc1.jpg" class="card-img-top" alt="Icono 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Reportes</h5>
+                        <p class="card-text">Registra todas las Incidencias que tu quieras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card reporte-card">
+                    <img src="https://i.pinimg.com/736x/40/8d/10/408d10c80146466474f85b71346f76ae.jpg" class="card-img-top" alt="Icono 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Reportes</h5>
+                        <p class="card-text">Mira el estado y progreso de tu reporte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

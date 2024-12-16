@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Registrar Reporte</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1050;
+      }
+      .modal-dialog {
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+      .modal-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .modal-body {
+        margin: 15px 0;
+        font-size: 1rem;
+      }
+      .modal-footer button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .modal-footer button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Usuario</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" (click)="viajar('/usuario')">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="viajar('/misreportes')">Mis reportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="viajar('/inicio')">Cerrar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="form-wrap p-4">
+              <h3 class="mb-4 text-center">Registrar Reporte</h3>
+
+              <div *ngIf="mensajeError" class="alert alert-danger" role="alert">
+                {{ mensajeError }}
+              </div>
+
+              <form (ngSubmit)="registrarReporte()">
+                <div class="form-group mb-3">
+                  <label for="titulo" class="form-label">Título</label>
+                  <input
+                    id="titulo"
+                    type="text"
+                    class="form-control"
+                    placeholder="Escribe el título del reporte"
+                    [(ngModel)]="reporte.titulo"
+                    name="titulo"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="descripcion" class="form-label">Descripción</label>
+                  <input
+                    id="descripcion"
+                    type="text"
+                    class="form-control"
+                    placeholder="Escribe la descripción del reporte"
+                    [(ngModel)]="reporte.descripcion"
+                    name="descripcion"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="latitud" class="form-label">Latitud</label>
+                  <input
+                    id="latitud"
+                    type="number"
+                    class="form-control"
+                    placeholder="Ejemplo: 19.4326"
+                    [(ngModel)]="reporte.latitud"
+                    name="latitud"
+                    step="any"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="longitud" class="form-label">Longitud</label>
+                  <input
+                    id="longitud"
+                    type="number"
+                    class="form-control"
+                    placeholder="Ejemplo: -99.1332"
+                    [(ngModel)]="reporte.longitud"
+                    name="longitud"
+                    step="any"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary w-100">Registrar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div 
+  class="modal fade show" 
+  style="display: block; background-color: rgba(0, 0, 0, 0.5)" 
+  *ngIf="mostrarModal" 
+  tabindex="-1" 
+  role="dialog"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Registro Exitoso</h5>
+        <button type="button" class="btn-close" aria-label="Close" (click)="cerrarModal()"></button>
+      </div>
+      <div class="modal-body">
+        <p>El reporte se ha registrado correctamente.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="cerrarModal()">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Administrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Administrador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" (click)="navegar('/administrador')">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="navegar('/reportes')">Reportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="navegar('/personas')">Usuarios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-4">
+        <h1 class="mb-4">Bienvenido al Panel de Administración</h1>
+        <p class="lead">Administra fácilmente reportes, usuarios y configuraciones.</p>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card reporte-card">
+                    <img src="https://i.pinimg.com/236x/38/f4/bc/38f4bccefd9154e9d78197a21610479f.jpg" class="card-img-top" alt="Icono 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Reportes</h5>
+                        <p class="card-text">Gestiona y visualiza los reportes generados por los usuarios del sistema.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card reporte-card">
+                    <img src="https://i.pinimg.com/236x/bd/42/f8/bd42f8068fe7be983aa8a0bc9c69e25d.jpg" class="card-img-top" alt="Icono 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Usuarios</h5>
+                        <p class="card-text">Administra los usuarios que acceden al sistema y asigna permisos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card reporte-card">
+                    <img src="https://i.pinimg.com/236x/5d/60/1d/5d601da8c688d0e8fdfdb9c44e8b6d05.jpg" class="card-img-top" alt="Icono 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Configuraciones</h5>
+                        <p class="card-text">Realiza ajustes en las configuraciones del sistema y personaliza opciones.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card reporte-card">
+                    <img src="https://i.pinimg.com/736x/bc/da/5a/bcda5a7b33d4672c6f2a7ab67aadb5a1.jpg" class="card-img-top" alt="Icono 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Estadísticas</h5>
+                        <p class="card-text">Visualiza las estadísticas de los reportes y el uso del sistema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

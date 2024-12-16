@@ -1,0 +1,124 @@
+/* Estilo para el navbar */
+ body{
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y limpia */
+    background-image: url('./imagenes/fondo.jpg'); /* Color de fondo suave y agradable (puedes cambiar este color) */
+    color: #333; /* Color de texto oscuro */
+  }
+.navbar {
+    background-color: #212529 !important; /* Color de navbar más oscuro */
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #ffffff !important; /* Texto blanco */
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #f8f9fa !important; /* Texto blanco claro en hover */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #ffffff; /* Icono de toggler blanco */
+  }
+  
+  .navbar .navbar-nav {
+    justify-content: flex-end; /* Alinear las opciones del navbar a la derecha */
+  }
+  
+  /* Estilo para el fondo del body */
+  
+  
+  /* Estilo para el título */
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para el input de búsqueda */
+  input[type="text"] {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #364cc7;
+  }
+  
+  /* Estilo para la tabla */
+  .reporte-table {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para que los bordes redondeados se apliquen correctamente */
+  }
+  
+  /* Estilo para las filas de la tabla */
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Fondo gris claro en las filas impares */
+  }
+  
+  .table-dark {
+    background-color: #343a40; /* Fondo más oscuro para el encabezado */
+    color: white;
+  }
+  
+  /* Estilo para las celdas de la tabla */
+  .table td, .table th {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Estilo para los botones */
+  .btn-card {
+    background-color: #364cc7; /* Azul vibrante */
+    border-color: #00aaff;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-card:hover {
+    background-color: #007bff; /* Azul más oscuro al hacer hover */
+    border-color: #007bff;
+  }
+  
+  /* Estilo para el contenedor de la tabla */
+  .table-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mensaje de advertencia */
+  .alert-warning {
+    background-color: #ffc107; /* Color de fondo amarillo */
+    color: #000000; /* Texto negro */
+  }
+  
+  /* Estilo para los bordes de las celdas de la tabla */
+  .table th, .table td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  h1 {
+    font-size: 3rem; /* Tamaño de fuente grande */
+    font-weight: 700; /* Negrita para hacerlo más prominente */
+    color: #000000; /* Color base del texto (gris oscuro) */
+    text-align: center; /* Centrado del texto */
+    background: linear-gradient(135deg, #666666, #cccccc); /* Degradado en tonos grises suaves */
+    -webkit-background-clip: text; /* Aplica el degradado solo al texto */
+    background-clip: text; /* Aplica el degradado solo al texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 1px 1px 8px rgba(0, 0, 0, 0.3), -2px -2px 10px rgba(0, 0, 0, 0.4); /* Sombra suave para el efecto 3D */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 30px; /* Espacio inferior */
+  }

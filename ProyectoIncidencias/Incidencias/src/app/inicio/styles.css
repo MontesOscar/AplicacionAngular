@@ -1,0 +1,68 @@
+/* Asegúrate de tener el archivo bg.jpg dentro de la carpeta 'images' */
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url('./bg.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  /* Sección de inicio de sesión */
+  .ftco-section {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el formulario */
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  /* Estilos del contenedor del formulario */
+  .login-wrap {
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: white;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  /* Estilos del botón */
+  .submit {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .submit:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Agregar un poco de sombra y bordes redondeados a los iconos */
+  .field-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+  }
+  

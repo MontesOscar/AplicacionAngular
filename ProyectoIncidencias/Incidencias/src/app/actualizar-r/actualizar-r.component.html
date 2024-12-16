@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Actualizar Reporte</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Usuario</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" (click)="viajar('/usuario')">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="viajar('/misreportes')">Mis reportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="viajar('/inicio')">Cerrar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="form-wrap p-4">
+              <h3 class="mb-4 text-center">Actualizar Reporte</h3>
+              <form (ngSubmit)="mostrarModalConfirmacion('actualizar', reporte.id)">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Título" [(ngModel)]="reporte.titulo" name="titulo" required>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Descripción" [(ngModel)]="reporte.descripcion" name="descripcion" required>
+                </div>
+
+                <div class="form-group">
+                  <input type="number" class="form-control" placeholder="Latitud" [(ngModel)]="reporte.latitud" name="latitud" step="any" required>
+                </div>
+
+                <div class="form-group">
+                  <input type="number" class="form-control" placeholder="Longitud" [(ngModel)]="reporte.longitud" name="longitud" step="any" required>
+                </div>
+
+                
+
+                <div class="form-group">
+                  <button type="submit" class="form-control btn btn-primary submit px-3">Actualizar Reporte</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade show" style="display: block; background-color: rgba(0, 0, 0, 0.5);" *ngIf="mostrarModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Confirmación</h5>
+              <button type="button" class="btn-close" aria-label="Close" (click)="cerrarModal()"></button>
+            </div>
+            <div class="modal-body">
+              <p>{{ modalMensaje }}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" (click)="confirmarAccion()">Confirmar</button>
+              <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

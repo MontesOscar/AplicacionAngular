@@ -1,0 +1,63 @@
+/* Estilos generales */
+
+html {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y limpia */
+    background-image: url('./imagenes/fondo.jpg'); /* Color de fondo suave y agradable (puedes cambiar este color) */
+    color: #333; /* Color de texto oscuro */
+  }
+
+/* Barra de navegación */
+.navbar {
+    border-bottom: 2px solid #ddd;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por los enlaces */
+.nav-link:hover {
+    color: #f39c12; /* Color dorado */
+    text-decoration: none;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+/* Fondo y espaciado en el body */
+.container {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Título principal */
+h1.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Agregar sombra a la barra de navegación */
+.navbar-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
